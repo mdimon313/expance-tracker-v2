@@ -76,7 +76,7 @@ export default function Settings() {
     }
   };
 
-  const toggleBiometric = async (val) => {
+  /* const toggleBiometric = async (val) => {
     try {
       if (val) await enableBiometricLogin();
       else await disableBiometricLogin();
@@ -84,7 +84,7 @@ export default function Settings() {
     } catch (e) {
       setBioEnabled(false);
     }
-  };
+  }; */
 
   const handlePhoto = async () => {
     try {
@@ -184,7 +184,7 @@ export default function Settings() {
             value={currency}
             onPress={cycleCurrency}
           />
-          <Row
+          {/* <Row
             icon="finger-print-outline"
             label={t("settings.biometricLoginToggle")}
             right={
@@ -195,8 +195,9 @@ export default function Settings() {
                 trackColor={{ true: "#10B981" }}
               />
             }
-          />
-          <Row
+          /> */}
+
+          {/* <Row
             icon="location-outline"
             label={t("settings.locationPermission")}
             value={
@@ -204,10 +205,10 @@ export default function Settings() {
                 ? t("settings.allowed")
                 : t("settings.denied")
             }
-          />
+          /> */}
         </Card>
 
-        <Card className="mb-4">
+        {/* <Card className="mb-4">
           <Row
             icon="download-outline"
             label={t("settings.exportData")}
@@ -224,7 +225,7 @@ export default function Settings() {
               <Ionicons name="chevron-forward" size={18} color="#94A3B8" />
             }
           />
-        </Card>
+        </Card> */}
 
         <Pressable
           onPress={handleLogout}

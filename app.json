@@ -1,17 +1,12 @@
 {
   "expo": {
     "name": "Expense Tracker",
-    "slug": "expense-tracker",
+    "slug": "expance-tracker-v2",
     "scheme": "expensetracker",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/icon.png",
+    "icon": "./src/assets/android-icon-monochrome.png",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./src/assets/android-splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0F172A"
-    },
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
@@ -45,6 +40,15 @@
       "expo-secure-store",
       "expo-local-authentication",
       [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F172A",
+          "image": "./src/assets/android-splash.png",
+          "imageWidth": 200,
+          "resizeMode": "cover"
+        }
+      ],
+      [
         "expo-location",
         {
           "locationWhenInUsePermission": "Location helps tag where your transactions happen."
@@ -58,15 +62,19 @@
         }
       ],
       "expo-font",
-      "expo-localization"
+      "expo-localization",
+      "expo-image",
+      "expo-status-bar",
+      "expo-splash-screen"
     ],
     "extra": {
       "router": {
         "origin": false
       },
       "eas": {
-        "projectId": "4316021f-e91a-462f-9074-fb966f08f185"
+        "projectId": "b84f94e9-2a84-4c54-950c-6592462634e3"
       }
-    }
+    },
+    "owner": "mdimon313s-team"
   }
 }
